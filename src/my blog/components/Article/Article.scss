@@ -1,0 +1,29 @@
+@import "../../../variables.scss";
+
+.m-article {
+  background-color: $c-main-light;
+  color: $c-white;
+  padding: 10px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px gray;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+}
