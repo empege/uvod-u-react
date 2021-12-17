@@ -5,3 +5,77 @@ body {
   color: $c-main-dark;
   font-family: "Courier New", Courier, monospace;
 }
+
+.o-listing {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.m-article {
+  background-color: $c-main-light;
+  color: $c-white;
+  padding: 10px 30px 30px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 3px gray;
+
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+
+  &--people {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    button {
+      background: none;
+      border: none;
+      font-size: 16px;
+      color: $c-white;
+      cursor: pointer;
+    }
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+.btn {
+  background: $c-main-dark;
+  border: 1px solid $c-white;
+  border-radius: 10px;
+  font-size: 16px;
+  color: $c-white;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 5px;
+}
+
+.counter {
+  text-align: center;
+
+  & * {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 55px;
+  }
+
+  svg {
+    font-size: 45px;
+  }
+}
