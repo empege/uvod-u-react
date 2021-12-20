@@ -26,6 +26,15 @@ const UseStateBasics1 = () => {
   const promeniNaslov = () => {
     // title = 'PROMENJEN NASLOV'
 
+    // Iz Countera
+    // setTitle(() => {
+    //   if (title === 'NASLOV') {
+    //     return 'NOVI NASLOV'
+    //   } else {
+    //     return 'NASLOV'
+    //   }
+    // })
+
     if (title === 'NASLOV') {
       setTitle('NOVI NASLOV')
     } else {
