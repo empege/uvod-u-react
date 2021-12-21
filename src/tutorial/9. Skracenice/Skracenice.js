@@ -6,6 +6,8 @@ const Skracenice = () => {
   const vrednost1 = text || 'hello world 1';
   const vrednost2 = text && 'hello world 2';
 
+  console.log(typeof vrednost2);
+
   const [toggle, setToggle] = useState(false);
 
   console.log(toggle);

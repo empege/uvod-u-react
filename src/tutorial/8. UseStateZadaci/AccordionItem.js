@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
 import { AiFillPlusCircle, AiFillMinusCircle } from 'react-icons/ai'
 
-const Panel = (props) => {
+const AccordionItem = (props) => {
 
   const { id, title, info } = props;
 
   const [isActive, setIsActive] = useState(false);
 
-  const togglePanel = () => {
+  const toggleItem = () => {
     setIsActive(!isActive);
   }
 
   return (
-    <article key={id} className="m-accordion__panel">
-      <div className="m-accordion__header" onClick={togglePanel}>
+    <article key={id} className="m-accordion__item">
+      <div className="m-accordion__header" onClick={toggleItem}>
         <h4>{title}</h4>
         <button className="m-accordion__btn">{isActive ? <AiFillMinusCircle /> : <AiFillPlusCircle />}</button>
       </div>
@@ -22,4 +22,4 @@ const Panel = (props) => {
   )
 }
 
-export default Panel
+export default AccordionItem

@@ -9,12 +9,13 @@ import Person from './tutorial/8. UseStateZadaci/Person'
 import Counter from './tutorial/8. UseStateZadaci/Counter'
 import Skracenice from './tutorial/9. Skracenice/Skracenice'
 import Accordion from './tutorial/8. UseStateZadaci/Accordion'
+import Accordion2 from './tutorial/8. UseStateZadaci/2-Accordion'
 
 // Styles
 import './index.scss'
 
 function App() {
-  return <Accordion />
+  return <Accordion2 />
 }
 
 ReactDom.render(<App />, document.getElementById('root'))

@@ -7,9 +7,9 @@ I neka ima info koji je skriven za pocetak, a onda na klik tog panela se prikaze
 Dakle, imamo niz objekata od 4, 5 objekata koji imaju id, title, info. Sa tim uradite map, prikazete ih sve i date im onClick da toggluje prikaz, sto mozete preko state da uradite.
 */
 
-import React from 'react'
+import React, { useState } from 'react'
 import { accordionData } from './data';
-import Panel from './Panel';
+import AccordionItem from './AccordionItem';
 
 const Accordion = () => {
 
@@ -18,8 +18,7 @@ const Accordion = () => {
       <h1>My Accordion</h1>
       {
         accordionData.map((current) => {
-
-          return <Panel key={current.id} {...current} />
+          return <AccordionItem key={current.id} {...current} />
         })
       }
     </section>
