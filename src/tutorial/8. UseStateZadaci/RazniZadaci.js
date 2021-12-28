@@ -5,13 +5,27 @@ Napravite button ispod i neka se klikom na button svaki put update broj koliko s
 
 2.  STRING - Napravite state promenljivu koja ce kao vrednost imati string (npr: 'STRING TRUE' :P) i neka klikom na dugme togglujete da pise nesto drugo (npr: 'STRING FALSE').
 
+setString((prevString) => {
+  if (prevString === 'TRUE'){
+    return 'FALSE'
+  } else {...}
+})
+
+<h1>{nasBool}</h1>
+
+setString('FALSE')
+
 3.  BOOLEAN - Napravite state promenljivu koja je false. Klikom na dugme neka se toggluje njena vrednost i ako je vrednost true ispisuje jedan string, a ako je false drugi (mozete da iskoristite logicke operatore ovde, npr: &&).
+
+<p>{ isText ? 'true' : 'false' }</p>
 
 4.  Napravite button koji ce na klik da pozove sve setState koje ste gore napravili. Da se u isto vreme incrementuje "kliknuto", toggluje bolean i toggluje string.
 
 5.  Zamenite sve funkcije iz 1, 2 i 3 tako da ne daju vrednost direktno, nego kroz anonimnu funkciju u kojoj imamo i predjasnju vrednost state (npr: prevState ili prevValue ili prev. Mozete ovo da vidite u Counter komponenti kod incrementa, samo bez setTimeout-a).
 
 6.  OBJEKAT - Napravite objekat koji ima sve gore navedene propertije, npr: { kliknuto: 0, str: 'STRING TRUE, mojBool: false } i neka to bude defaultna vrednost nove state promenjljive. Klikom na dugme uradite sve isto kao u 1, 2, 3 ali promenom ovog jednog objekta.
+
+setObj({...obj, mojBool: !mojBool})
 
 7.  Napravite komponentu modal (u istom ili drugom fajlu) koja po defaultu nije prikazana na ekranu. Klikom na dugme neka se prikaze ta komponenta, a ponovnim klikom neka opet nestane. Moze da bude samo jedna kocka zakucanog widtha i background colora da se vidi na ekranu samo.
 

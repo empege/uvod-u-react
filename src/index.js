@@ -10,12 +10,13 @@ import Counter from './tutorial/8. UseStateZadaci/Counter'
 import Skracenice from './tutorial/9. Skracenice/Skracenice'
 import Accordion from './tutorial/8. UseStateZadaci/Accordion'
 import Accordion2 from './tutorial/8. UseStateZadaci/2-Accordion'
+import ControlledInputs from './tutorial/10. ControlledInputs/ControlledInputs'
 
 // Styles
 import './index.scss'
 
 function App() {
-  return <Accordion2 />
+  return <ControlledInputs />
 }
 
 ReactDom.render(<App />, document.getElementById('root'))
