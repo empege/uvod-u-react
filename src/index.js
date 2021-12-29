@@ -11,12 +11,14 @@ import Skracenice from './tutorial/9. Skracenice/Skracenice'
 import Accordion from './tutorial/8. UseStateZadaci/Accordion'
 import Accordion2 from './tutorial/8. UseStateZadaci/2-Accordion'
 import ControlledInputs from './tutorial/10. ControlledInputs/ControlledInputs'
+import UseEffectBasics1 from './tutorial/11. UseEffectBasics/UseEffectBasics1'
+import UseEffectBasics2 from './tutorial/11. UseEffectBasics/UseEffectBasics2'
 
 // Styles
 import './index.scss'
 
 function App() {
-  return <ControlledInputs />
+  return <UseEffectBasics2 />
 }
 
 ReactDom.render(<App />, document.getElementById('root'))
