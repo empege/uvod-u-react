@@ -18,7 +18,7 @@ import UseEffectBasics2 from './tutorial/11. UseEffectBasics/UseEffectBasics2'
 import './index.scss'
 
 function App() {
-  return <UseEffectBasics2 />
+  return <Listing />
 }
 
 ReactDom.render(<App />, document.getElementById('root'))
