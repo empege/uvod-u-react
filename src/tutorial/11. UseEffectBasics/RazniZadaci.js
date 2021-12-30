@@ -17,6 +17,7 @@
 8. Napravite formu sa samo jednim input poljem. Input polje neka ima value neke svoje state promenljive, npr: name (sa funkcijom setName).
 Napravite ispod toga jedan div zakucanog widtha i heighta koji ce biti zute boje po defaultu, tacnije, bice zute boje sve dok je name prazan string.
 Koristeci useEffect posle svake promene state proverite vrednost koju ste ukucali, i ako name ima 1 do 3 karaktera, neka nas div bude crvene boje, a ako ima vise od 3 bude zelene boje.
+Probajte da umesto svih if else gore koje ste pisali, stavite u useEffect samo da vam je background to sto ste ukucali (npr. u useEffect samo stavite setBackground(input) i ukucajte red u input, tako da nas div dobije tu boju :))
 
 9. Napravite 2 state promenljive, prva i druga npr, sa pocetnim vrednostima 0. Neka se klikom na dugme prva povecava za jedan, a zatim koristeci useEffect neka se druga smanji za 1. Ispisite obe u jsx-u
 
